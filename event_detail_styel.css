@@ -1,0 +1,129 @@
+#event_detail_title {
+  text-align: center;
+  color: black;
+
+}
+
+.post_control_menu{
+  text-align: center;
+}
+
+.post_control_menu a{
+  text-decoration: none;
+  color: black;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+
+}
+
+.article{
+
+  margin: auto;
+}
+.image {
+
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+
+.comment_box {
+  text-align: center;
+  margin-bottom: 200px;
+  margin-top: 100px;
+  border-top: 1px solid black;
+}
+
+table {
+  margin: auto;
+  /* 텍스트에 따라 테이블의 사이즈가 유동적으로 바뀌지 않도록 하는 속성 */
+  table-layout: fixed;
+}
+.article_box {
+  width: 50%;
+  margin-top: 50px;
+  border: 1px solid black;
+}
+
+#title {
+  border-right: 1px solid black;
+}
+
+#view_count {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+.article_box td, .article_box th{
+  border-bottom: 1px solid black;
+}
+
+#writer {
+  border-right: 1px solid black;
+
+}
+
+#upload_date {
+  border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#location {
+  border-right: 1px solid black;
+
+}
+
+#period {
+  border-right: 1px solid black;
+
+}
+
+
+
+
+
+.comment_list {
+  width: 70%;
+  border-collapse: collapse;
+
+}
+
+.comment_list td, th {
+  /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
+  word-break: break-all;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+.edit_button, .delete_button {
+  background-color: transparent !important;
+ background-image: none !important;
+ border-color: transparent;
+ border: none;
+ color: #000000;
+}
+
+.edit_delete {
+  text-align: right;
+  padding-right: 40px;
+  margin-top: 20px;
+}
+
+.edit_delete a {
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.upload {
+  background-color: transparent !important;
+ background-image: none !important;
+ border: 1px solid black;
+ color: #000000;
+}

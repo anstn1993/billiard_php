@@ -1,0 +1,290 @@
+h2 {
+  text-align: center;
+  color: black;
+}
+
+
+.mypage {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+
+.mypage_child {
+  flex-grow: 1;
+  height: 600px;
+}
+
+#mypage_article {
+  flex-grow: 4;
+  height: 100%;
+
+}
+
+#mypage_category {
+  background-color: #CBC79D;
+  display: flex;
+  flex-direction: column;
+}
+
+.mypage_category_child {
+  flex-grow: 1;
+  text-align: center;
+  border-bottom: 1px solid #3B5144;
+  padding-top: 40px;
+}
+
+.mypage_category_child a {
+  text-decoration: none;
+  color:#3B5144;
+}
+
+#myinfo_table {
+  margin: auto;
+  margin-top: 60px;
+  border: 1px solid black;
+  width: 800px;
+  height: 400px;
+}
+
+#myinfo_table th {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#myinfo_table td {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+#edit_myinfo_table {
+  margin: auto;
+  margin-top: 60px;
+  border: 1px solid black;
+  width: 600px;
+  height: 400px;
+}
+
+
+
+#change_info_button {
+  text-align: center;
+}
+
+.change_quit_button {
+  background-color: transparent !important;
+  background-image: none !important;
+  border-color: transparent;
+  border: 1px solid black;
+  color: #000000;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+#post_category {
+  text-align: center;
+}
+
+#post_category a {
+  text-decoration: none;
+  color: black;
+  margin: 40px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+#mypost_freeobard_table {
+  margin: auto;
+  table-layout: fixed;
+  width: 1100px;
+  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+  border-collapse: collapse;
+}
+
+#mypost_freeobard_table td, th {
+  /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
+  word-break: break-all;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+#mypost_freeobard_table td a{
+  text-decoration: none;
+  color: black;
+}
+
+#mypost_event_table {
+  margin: auto;
+  table-layout: fixed;
+  width: 1100px;
+  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+  border-collapse: collapse;
+}
+
+#mypost_event_table td, th {
+  /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
+  word-break: break-all;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
+#mypost_event_table td a{
+  text-decoration: none;
+  color: black;
+}
+
+.list_title {
+  width: 450px;
+}
+
+#basket_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 30px;
+
+}
+.basket_list_child {
+  text-align: center;
+}
+
+.basket_list_child a{
+  text-decoration: none;
+  color: black;
+}
+
+.purchase_delete_button{
+background-color: transparent !important;
+background-image: none !important;
+border-color: transparent;
+border: 1px solid black;
+color: #000000;
+margin: auto;
+margin-bottom: 100px;
+}
+
+#pay_info {
+  text-align: center;
+}
+
+#delete_button_box {
+  text-align: right;
+  padding-right: 30px;
+}
+
+#order_user_table {
+  margin: auto;
+  table-layout: fixed;
+  width: 1100px;
+  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+  border-collapse: collapse;
+
+}
+
+#order_user_table a {
+
+    text-decoration: none;
+    color: black;
+  }
+
+
+  #order_user_table td, th {
+    /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
+    word-break: break-all;
+
+    text-align: center;
+
+
+
+  }
+#order_user_table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.order_number {
+  width: 200px;
+}
+
+#product_list_box {
+  margin: auto;
+  table-layout: fixed;
+  width: 1200px;
+  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#product_list_box th {
+  border-bottom: 1px solid black;
+  background-color: #F8DFBD;
+}
+
+#product_list_box td {
+  text-align: center;
+}
+
+#order_info_box {
+  margin: auto;
+  table-layout: fixed;
+  width: 1200px;
+  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+#order_info_box th {
+  border-right: 1px solid black;
+  width: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#order_info_box td {
+  border-bottom: 1px solid black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#delivery_category {
+  text-align: center;
+}
+
+#delivery_category a {
+  text-decoration: none;
+  color: black;
+  margin: 40px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+#delivery_status_change_button {
+  background-color: transparent !important;
+ background-image: none !important;
+ border-color: transparent;
+ border: 1px solid black;
+ color: #000000;
+ margin: auto;
+
+ position: fixed;
+ right: 30px;
+ top: 300px;
+}
+
+#page {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#page a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+#search {
+  text-align: center;
+  margin-bottom: 30px;
+}

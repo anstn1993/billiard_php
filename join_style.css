@@ -1,0 +1,27 @@
+.join h1{
+  color: black;
+  text-align: center;
+}
+
+
+table{
+  margin: auto;
+}
+
+.join_cancel{
+  display: flex;
+  width: 150px;
+  margin: auto;
+}
+
+.join_cancel_button{
+  flex-grow: 1;
+}
+
+#id_check, #password_match_check, #nickname_check, #name_check, #identitynumber_check, #tel_check {
+  text-align: center;
+}
+
+#map {
+  margin: auto;
+}

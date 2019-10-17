@@ -1,0 +1,39 @@
+.upload_article_style{
+  text-align: center;
+  color:black;
+}
+
+.title{
+  text-align: center;
+}
+
+.article{
+  text-align: center;
+}
+
+.article textarea{
+  width: 600px;
+  height: 300px;
+}
+
+.upload_button{
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+.upload_cancel {
+  text-align: center;
+  padding: 50px;
+}
+
+.upload_cancel_child {
+  background-color: transparent !important;
+ background-image: none !important;
+ border-color: transparent;
+ border: 1px solid black;
+ color: #000000;
+ margin: auto;
+}

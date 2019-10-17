@@ -1,0 +1,17 @@
+.upload_news_title {
+  text-align: center;
+  color: black;
+}
+
+table {
+  margin: auto;
+  padding: 20px;
+}
+
+tr {
+  margin: 20px;
+}
+
+.upload_cancel {
+  text-align: center;
+}

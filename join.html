@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="main_style.css">
+  <link rel="stylesheet" href="join_style.css">
+
+</head>
+<body>
+  <nav class="top">
+    <div class="top_child">
+      <a class="top_menu" href="main.php">메인으로</a>
+    </div>
+  </nav>
+<div class="main">
+  <h1><a href="main.php">billiards world</a></h1>
+</div>
+
+  <nav class="menu">
+    <div class="menu_child">
+      <a class="freeboard" href="freeboard.php">자유게시판</a>
+    </div>
+    <div class="menu_child">
+      <a class="chat" href="chat.php">당톡방</a>
+    </div>
+    <div class="menu_child">
+      <a class="news" href="news.php">당구소식</a>
+    </div>
+    <div class="menu_child">
+        <a class="product" href="product.php">당구용품</a>
+    </div>
+  </nav>
+  <div class="join">
+    <h1>회원가입</h1>
+  </div>
+  <br>
+  <form action="login.html" method="post" onsubmit="return join()">
+    <table>
+      <tr>
+        <td>아이디</td>
+        <td><input id="id_input" type="text" name="id" size=30></td>
+      </tr>
+      <!-- 자바 스크립트로 아이디 유효성 검사 메세지를 출력하기 위해 만든 태그  -->
+      <tr id="id_check">
+        <td id="id_check_child" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td>비밀번호</td>
+        <td><input id="password_input" type="password" name="password" size=30></td>
+      </tr>
+      <tr>
+        <td>비밀번호 확인</td>
+        <td><input id="password_check_input" type="password" name="password_check" size=30></td>
+      </tr>
+        <!-- 자바 스크립트로 비밀번호 검사 메세지를 출력하기 위해 만든 태그  -->
+      <tr id="password_match_check">
+        <td id="password_match_check_child" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td>닉네임</td>
+        <td><input id="nickname_input" type="text" name="nickname" size=30></td>
+      </tr>
+        <!-- 자바 스크립트로 닉네임 검사 메세지를 출력하기 위해 만든 태그  -->
+      <tr id="nickname_check">
+        <td id="nickname_check_child" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td>이름</td>
+        <td><input id="name_input" type="text" name="name" size=30></td>
+      </tr>
+      <!-- 자바 스크립트로 이름 유효성 검사 메세지를 출력하기 위해 만든 태그  -->
+      <tr id="name_check">
+        <td id="name_check_child" colspan="3"></td>
+      </tr>
+
+      <tr>
+        <td>주민등록번호</td>
+        <td> <input id="identitynumber1_input" type="text" name="identitynumber1" maxlength="6" size="12">-<input id="identitynumber2_input" type="password" name="identitynumber2" maxlength="7" size="12"></td>
+        <td><button type="button" name="check">검사</button></td>
+      </tr>
+
+      <tr>
+        <td>전화번호</td>
+        <td><input id="tel1_input" type="tel" name="tel1" maxlength="3" size="6">-<input id="tel2_input" type="tel" name="tel2" maxlength="4" size="6">-<input id="tel3_input" type="tel" name="tel3" maxlength="4" size="6"></td>
+      </tr>
+    </table>
+    <br>
+    <div class="join_cancel">
+      <div class="join_cancel_button">
+        <input type="submit" id="join_button" value="회원가입">
+      </div>
+      <div class="join_cancel_button">
+        <button type="button" name="cancel" onclick="location.href='login.html'">취소</button>
+      </div>
+    </div>
+  </form>
+
+  <script type="text/javascript">
+    //회원가입 버튼을 눌렀을 때의 동작을 정의하기 위해 만든 메소드다.
+    function join(){
+      var id=document.getElementById('id_input').value;
+      var password=document.getElementById('password_input').value;
+      var password_check=document.getElementById('password_check_input').value;
+      var nickname=document.getElementById('nickname_input').value;
+      var name=document.getElementById('name_input').value;
+      var identitynumber1=document.getElementById('identitynumber1_input').value;
+      var identitynumber2=document.getElementById('identitynumber2_input').value;
+      var tel1=document.getElementById('tel1_input').value;
+      var tel2=document.getElementById('tel2_input').value;
+      var tel3=document.getElementById('tel3_input').value;
+      var item=[id, password, password_check, nickname, name, identitynumber1, identitynumber2, tel1, tel2, tel3];
+      console.log(item);
+      for(var i=0; i<item.length; i++){
+        if(item[i]==""){
+          alert('항목을 모두 입력해주세요.');
+          return false;
+          break;
+        }
+      }
+  }
+
+
+        //아이디 입력 칸에 값을 입력하고 포커스가 떠나는 순간을 케치해서 아이디의 유효성을 검사하는 메소드다.
+        var check_id=document.getElementById('id_input');
+        //blur라는 이벤트는 포커스가 떠나는 순간 발생하는 이벤트고 addEventListener를 통해 해당 이벤트가 발생하는 순간에 동작할 함수를 정의했다.
+        check_id.addEventListener('blur', function(event){
+          //id변수는 아이디 입력 칸 입력한 데이터를 담는다.
+          var id=document.getElementById('id_input').value;
+          //id_form변수는 입력된 아이디의 양식이 이메일 양식에 맞는지를 확인하기 위한 변수다.
+          var id_form=/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+          //아이디가 공백이면 유효성 체크 메세지를 출력하지 않는다.
+          if(id.trim()==""){
+            document.getElementById('id_check_child').innerHTML="";
+          }
+          //아이디가 유효성 검사 결과 유효하지 않다면 이메일 양식으로 작성하라는 유효성 체크 메세지를 출력한다.
+          else if(!id_form.test(id)){
+            document.getElementById('id_check_child').innerHTML="이메일 양식으로 작성해주세요.";
+            document.getElementById('id_check_child').style.color="red";
+          }
+          //아이디가 anstn1993@naver.com인 경우 이미 사용 중인 아이디라는 유효성 체크 메세지를 출력한다. (하드코딩)
+          else if(id=="anstn1993@naver.com"){
+            document.getElementById('id_check_child').innerHTML="이미 사용 중인 아이디 입니다.";
+            document.getElementById('id_check_child').style.color="red";
+          }
+          //위의 경우에 모두 해당되지 않는다면 사용 가능한 아이디라는 유효성 체크 메세지를 출력한다.
+          else{
+            document.getElementById('id_check_child').innerHTML="사용 가능한 아이디 입니다.";
+            document.getElementById('id_check_child').style.color="green";
+          }
+        });
+
+
+        //비밀번호와 비밀번호 확인 칸에 입력한 문자열이 일치하는지 확인하기 위한 함수다.
+        var check_password=document.getElementById('password_check_input');
+        //이벤트 방식은 위와 동일하다.
+        check_password.addEventListener('blur', function(event){
+          //password변수는 비밀번호 입력 칸에 입력된 비밀번호를 담는 변수다.
+          var password=document.getElementById('password_input').value;
+          //password_check변수는 비밀번호 확인 입력 칸에 입력된 비밀번호를 담는 변수다.
+          var password_check=document.getElementById('password_check_input').value;
+
+          //비밀번호 확인 입력 칸이 비어있으면 메세지를 출력하지 않는다.
+          if(password_check.trim()==""){
+              document.getElementById('password_match_check_child').innerHTML="";
+          }
+          //비밀번호 입력 칸이 비어있으면 비밀번호를 입력하라는 메세지를 출력한다.
+          else if(password.trim()==""){
+            document.getElementById('password_match_check_child').innerHTML="비밀번호를 입력해주세요.";
+            document.getElementById('password_match_check_child').style.color="red";
+          }
+          //비밀번호와 비밀번호 확인 값이 다르면 비밀번호가 일치하지 않는다는 메세지를 출력한다.
+          else if(password != password_check){
+            document.getElementById('password_match_check_child').innerHTML="비밀번호가 일치하지 않습니다.";
+            document.getElementById('password_match_check_child').style.color="red";
+          }
+          //비밀번호와 비밀번호 확인 값이 일치하면 비밀번호가 일치한다는 메세지를 출력한다.
+          else{
+            document.getElementById('password_match_check_child').innerHTML="비밀번호 일치";
+            document.getElementById('password_match_check_child').style.color="green";
+          }
+        });
+
+
+        //닉네임의 중복 여부를 검사하기 위해서 만든 함수다.
+        var check_nickname=document.getElementById('nickname_input');
+        check_nickname.addEventListener('blur', function(event){
+          //nickname변수는 닉네임 입력 칸에 입력된 문자열을 담는 변수다.
+          var nickname=document.getElementById('nickname_input').value;
+
+          //닉네임 입력 칸이 공백인 경우 아무런 메세지가 출력되지 않는다.
+          if(nickname.trim()==""){
+            document.getElementById('nickname_check_child').innerHTML="";
+          }
+          //닉네임이 만수인 경우에는 이미 사용 중인 닉네임이라는 메세지를 출력한다. (하드코딩)
+          else if(nickname=="만수"){
+            document.getElementById('nickname_check_child').innerHTML="이미 사용 중인 닉네임 입니다.";
+            document.getElementById('nickname_check_child').style.color="red";
+          }
+          //위의 두 경우에 해당되지 않으면 사용 가능한 닉네임이라는 메세지가 출력된다.
+          else{
+            document.getElementById('nickname_check_child').innerHTML="사용 가능한 닉네임 입니다.";
+            document.getElementById('nickname_check_child').style.color="green";
+          }
+        });
+
+        //이름의 유효성을 검사하기 위해서 만든 함수다.
+        var check_name=document.getElementById('name_input');
+        check_name.addEventListener('blur', function(event){
+          //name변수는 이름 입력 칸에 입력된 문자열을 담는 변수다.
+          var name=document.getElementById('name_input').value;
+          //name_form변수는 이름의 유효성 검사 규칙을 담는 변수다.
+          var name_form=/^[가-힝]{2,}$/;
+
+          //이름이 공백인 경우 아무런 메세지도 출력하지 않는다.
+          if(name.trim()==""){
+            document.getElementById('name_check_child').innerHTML="";
+          }
+          //이름이 유효한 경우 아무런 메세지도 출력하지 않는다.
+          else if(name_form.test(name)){
+            document.getElementById('name_check_child').innerHTML="";
+          }
+          //이름이 유효하지 않은 경우에는 이름을 다시 입력하라는 메세지가 출력된다.
+          else{
+            document.getElementById('name_check_child').innerHTML="이름을 다시 입력해주세요.";
+            document.getElementById('name_check_child').style.color="red";
+          }
+        });
+
+        var check_identitynumber=document.getElementById('identitynumber2_input');
+        check_identitynumber.addEventListener('blur', function(event){
+          var identitynumber1=document.getElementById('identitynumber1_input').value;
+          var identitynumber2=document.getElementById('identitynumber2_input').value;
+          var identitynumber=identitynumber1+identitynumber2;
+          console.log(identitynumber);  
+        });
+
+  </script>
+</body>
+</html>

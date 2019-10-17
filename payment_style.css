@@ -1,0 +1,50 @@
+.payment_title{
+  text-align: center;
+  color: black;
+}
+
+h2{
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+
+form {
+  text-align: center;
+}
+
+.delivery_info {
+  width: 900px;
+  margin: auto;
+  background-color: #C3C4C0;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+#product_list_box {
+  margin: auto;
+  table-layout: fixed;
+  width: 1000px;
+  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#product_list_box th {
+  border-bottom: 1px solid black;
+  background-color: #F8DFBD;
+}
+
+#product_list_box td {
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  text-align: left;;
+}

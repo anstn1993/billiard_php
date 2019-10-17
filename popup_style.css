@@ -1,0 +1,20 @@
+#popup_setting_box {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  width: 100%;
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+#close_button {
+  background-color: transparent !important;
+ background-image: none !important;
+ border-color: transparent;
+ border: 1px solid black;
+ color: #000000;
+ margin: auto;
+}

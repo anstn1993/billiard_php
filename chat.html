@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>당톡방</title>
+</head>
+<body>
+  <nav class="top">
+      <?php
+      try {
+        error_reporting(0);
+        $id=$_POST['id'];
+        if(empty($id)){
+          echo "<div class='top_child'><a class='top_menu' href='login.html'>로그인</a></div>
+                <div class='top_child'><a class='top_menu' href='join.html'>회원가입</a></div>";
+        }else{
+          echo "<div class='top_child'><a class='top_menu' href='main.php'>로그아웃</a></div>
+                <div class='top_child'><a class='top_menu' href='mypage.php'>마이페이지</a></div>";
+        }
+      } catch (Exception $e) {
+
+      }
+       ?>
+</nav>
+<div class="main">
+  <h1><a href="main.php">billiards world</a></h1>
+</div>
+
+  <nav class="menu">
+    <div class="menu_child">
+      <a class="freeboard" href="freeboard.php">자유게시판</a>
+    </div>
+    <div class="menu_child">
+      <a class="chat" href="chat.html">당톡방</a>
+    </div>
+    <div class="menu_child">
+        <a class="product" href="product.php">당구용품</a>
+    </div>
+  </nav>
+  <h1>당톡방</h1>
+</body>
+</html>

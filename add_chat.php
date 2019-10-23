@@ -1,8 +1,8 @@
 <?php
-  session_start();
+include("connect_db.php");//데이터베이스와 연결
+session_start();
 
-  $conn=mysqli_connect('127.0.0.1','root','rla933466r!','billiards');
-  $sql="
+$sql = "
     INSERT INTO chat
     (account, message, date)
       VALUES(
@@ -11,12 +11,12 @@
           NOW()
       )
   ";
-  $result=mysqli_query($conn, $sql);
-  $sql="
+$result = mysqli_query($conn, $sql);
+$sql = "
     SELECT*FROM chat
     ORDER BY id DESC
     ";
-  $result=mysqli_query($conn, $sql);
-  $row=mysqli_fetch_array($result);
-  echo $row['id'];
- ?>
+$result = mysqli_query($conn, $sql);
+$row = mysqli_fetch_array($result);
+echo $row['id'];
+?>

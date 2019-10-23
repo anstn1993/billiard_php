@@ -1,50 +1,50 @@
 .product_detail {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: black;
 }
 
 .product_name {
-  text-align: center;
+    text-align: center;
 }
 
-.product_img{
-  text-align: center;
+.product_img {
+    text-align: center;
 }
 
-.product_price{
-  text-align: center;
+.product_price {
+    text-align: center;
 }
 
-.purchase_form{
-  text-align: center;
+.purchase_form {
+    text-align: center;
 }
 
-.product_spec{
-  text-align: center;
-  padding-bottom: 30px;
-  width: 500px;
-  margin: auto;
+.product_spec {
+    text-align: center;
+    padding-bottom: 30px;
+    width: 500px;
+    margin: auto;
 }
 
-.edit_delete{
-  text-align: right;
-  padding-right: 40px;
+.edit_delete {
+    text-align: right;
+    padding-right: 40px;
 }
 
 .edit_delete a {
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 5px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
-.purchase_basket_button{
-background-color: transparent !important;
-background-image: none !important;
-border-color: transparent;
-border: 1px solid black;
-color: #000000;
-margin: auto;
-margin-bottom: 100px;
+.purchase_basket_button {
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+    border: 1px solid black;
+    color: #000000;
+    margin: auto;
+    margin-bottom: 100px;
 }

@@ -1,74 +1,74 @@
-.news_title{
-  text-align: center;
-  color: black;
+.news_title {
+    text-align: center;
+    color: black;
 }
 
-.news_list_info{
-  text-align: center;
-  background-color: #C3C4C0;
-  width: 800px;
-  margin: auto;
+.news_list_info {
+    text-align: center;
+    background-color: #C3C4C0;
+    width: 800px;
+    margin: auto;
 }
 
 
 #news_title {
-  flex-grow: 10;
+    flex-grow: 10;
 }
 
-.news_list_child a{
-  text-decoration: none;
-  color:black;
+.news_list_child a {
+    text-decoration: none;
+    color: black;
 }
 
 .upload_news {
-  text-align: right;
-  padding-right: 40px;
+    text-align: right;
+    padding-right: 40px;
 }
 
-.upload_news a{
-  font-size: 20px;
-  color: black;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 5px;
+.upload_news a {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 table {
-  margin: auto;
-  table-layout: fixed;
-  width: 1000px;
-  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
-  border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed;
+    width: 1000px;
+    /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+    border-collapse: collapse;
 }
 
 td, th {
-  /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
-  word-break: break-all;
-  border-bottom: 1px solid black;
-  text-align: center;
+    /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
+    word-break: break-all;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 
-td a{
-  text-decoration: none;
-  color: black;
+td a {
+    text-decoration: none;
+    color: black;
 }
 
 .list_title {
-  width: 550px;
+    width: 550px;
 }
 
 #page {
-  text-align: center;
-  margin-top: 30px;
+    text-align: center;
+    margin-top: 30px;
 }
 
 #page a {
-  text-decoration: none;
-  color: black;
-  padding: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
 #search {
-  text-align: center;
-  margin-bottom: 30px;
+    text-align: center;
+    margin-bottom: 30px;
 }

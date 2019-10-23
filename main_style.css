@@ -1,78 +1,77 @@
-
 /*최상단 메뉴 박스 */
 .top {
-  display: flex;
-  flex-direction: row-reverse;
-  text-align: right;
-  text-decoration: none;
-  background-color: #111213;
-  color: white;
-  padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    text-decoration: none;
+    background-color: #111213;
+    color: white;
+    padding-top: 20px;
 
 }
+
 .top_child {
-  flex-basis: 100px;
+    flex-basis: 100px;
 }
 
 #nickname {
-  flex-grow: 10;
+    flex-grow: 10;
 }
 
 .top_child:nth-child(1) {
-  padding-right: 30px;
+    padding-right: 30px;
 }
 
-.top a{
-  text-align: right;
-  text-decoration: none;
-  color: white;
+.top a {
+    text-align: right;
+    text-decoration: none;
+    color: white;
 
 }
 
 .main {
-text-align: center;
-background-color:  #111213;
-padding-top: 10px;
-padding-bottom: 10px;
+    text-align: center;
+    background-color: #111213;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 h1 {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
-.main a{
-  text-decoration: none;
-  color: white;
+.main a {
+    text-decoration: none;
+    color: white;
 }
 
 .top_menu:hover {
-  text-decoration: none;
-  color: skyblue;
+    text-decoration: none;
+    color: skyblue;
 }
 
 
-
-  /* 자유 게시판, 당구 용품, 당톡방 네비게이션 박스 */
-.menu{
-  background-color:#67032E;
-  display: flex;
-  flex-direction: row;
+/* 자유 게시판, 당구 용품, 당톡방 네비게이션 박스 */
+.menu {
+    background-color: #67032E;
+    display: flex;
+    flex-direction: row;
 }
 
-.menu_child{
-  flex-grow: 1;
-  text-align: center;
+.menu_child {
+    flex-grow: 1;
+    text-align: center;
 }
 
 /* 메뉴 바 속에서 자유 게시판 a태그*/
-.menu_child a{
-  text-decoration: none;
-  color: white;
-  text-align: left;
+.menu_child a {
+    text-decoration: none;
+    color: white;
+    text-align: left;
 }
 
-.freeboard:hover, .chat:hover, .news:hover, .product:hover, .event:hover{
-  text-decoration: none;
-  color: skyblue;
+.freeboard:hover, .chat:hover, .news:hover, .product:hover, .event:hover {
+    text-decoration: none;
+    color: skyblue;
 }

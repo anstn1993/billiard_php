@@ -1,20 +1,20 @@
 .findidresult_title {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: black;
 }
 
 .findidresult_ment {
-  text-align: center;
-  padding: 50px;
+    text-align: center;
+    padding: 50px;
 }
 
 .login_button {
-  text-align: center;
+    text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color: black;
-  border: 1px solid black;
-  border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 7px;
 }

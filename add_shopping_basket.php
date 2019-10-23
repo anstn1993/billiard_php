@@ -1,7 +1,8 @@
 <?php
+include("connect_db.php");//데이터베이스와 연결
+
 session_start();
-$conn=mysqli_connect('127.0.0.1','root','rla933466r!','billiards');
-$sql="
+$sql = "
   INSERT INTO basket
   (product_id, account, nickname)
   VALUES(
@@ -10,6 +11,6 @@ $sql="
       '{$_SESSION['nickname']}'
     )
 ";
-$result=mysqli_query($conn, $sql);
-header('Location: ./product.php?page='.$_GET['page']);
- ?>
+$result = mysqli_query($conn, $sql);
+header('Location: ./product.php?page=' . $_GET['page']);
+?>

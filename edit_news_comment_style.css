@@ -1,17 +1,18 @@
 h2 {
-  text-align: center;
-  color: black;
+    text-align: center;
+    color: black;
 }
+
 .edit_cancel {
-  text-align: center;
-  padding-top: 10px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .edit_cancel_child {
-  background-color: transparent !important;
- background-image: none !important;
- border-color: transparent;
- border: 1px solid black;
- color: #000000;
- margin: auto;
+    background-color: transparent !important;
+    background-image: none !important;
+    border-color: transparent;
+    border: 1px solid black;
+    color: #000000;
+    margin: auto;
 }

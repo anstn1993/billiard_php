@@ -1,23 +1,22 @@
-.edit_article_title{
-  text-align: center;
-  color: black;
+.edit_article_title {
+    text-align: center;
+    color: black;
 }
 
-
-.title{
-  text-align: center;
+.title {
+    text-align: center;
 }
 
-.article{
-  text-align: center;
+.article {
+    text-align: center;
 }
 
-.article textarea{
-  width: 600px;
-  height: 300px;
+.article textarea {
+    width: 600px;
+    height: 300px;
 }
 
-.edit_article_button{
-  text-align: center;
-  padding: 100px;
+.edit_article_button {
+    text-align: center;
+    padding: 100px;
 }

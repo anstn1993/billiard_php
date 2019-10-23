@@ -1,10 +1,7 @@
 <?php
+include("connect_db.php");//데이터베이스와 연결
 
-
-$conn=mysqli_connect('127.0.0.1','root','rla933466r!','billiards');
-
-
-$sql_insert="
+$sql_insert = "
   INSERT INTO news
     (title, url, date, view_count, comment_count)
    VALUES(
@@ -17,13 +14,13 @@ $sql_insert="
 ";
 echo $sql_insert;
 
-$result=mysqli_query($conn, $sql_insert);
-if($result===false){
-  echo '저장에 문제가 생김';
-  mysqli_error($conn);
-}else{
-  echo '잘 저장됨';
+$result = mysqli_query($conn, $sql_insert);
+if ($result === false) {
+    echo '저장에 문제가 생김';
+    mysqli_error($conn);
+} else {
+    echo '잘 저장됨';
 }
 
 header('Location: ./news.php');
- ?>
+?>

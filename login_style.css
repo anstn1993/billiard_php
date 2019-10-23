@@ -1,33 +1,33 @@
-.login h1{
-  text-align: center;
-  color: black;
+.login h1 {
+    text-align: center;
+    color: black;
 }
 
-.logininfo{
-  text-align: center;
+.logininfo {
+    text-align: center;
 }
 
-#password{
-  padding-right: 17px;
+#password {
+    padding-right: 17px;
 }
 
-.login_join_button{
-  display: flex;
-  flex-direction: row;
-  width: 180px;
-  margin: auto;
+.login_join_button {
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    margin: auto;
 }
 
 .login_join_button_child {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
-.find_id_password{
-  text-align: center;
+.find_id_password {
+    text-align: center;
 }
 
-.find_id_password a{
-  text-decoration: none;
-  color: black;
-  margin: 5px
+.find_id_password a {
+    text-decoration: none;
+    color: black;
+    margin: 5px
 }

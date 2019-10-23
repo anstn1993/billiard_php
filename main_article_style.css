@@ -1,66 +1,66 @@
 #event_text, #freeboard_text {
-  font-size: 20px;
-  text-align: center;
-  margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .main_article {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .main_article_child {
-  flex-grow: 1;
-  flex-shrink: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 
 table {
-  margin: auto;
-  table-layout: fixed;
-  width: 95%;
-  /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
-  border-collapse: collapse;
+    margin: auto;
+    table-layout: fixed;
+    width: 95%;
+    /* 테이블의 보더 간의 잘리는 부분이 이어지게 보이는 효과 */
+    border-collapse: collapse;
 }
 
 td, th {
-  /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
-  word-break: break-all;
-  border-bottom: 1px solid black;
-  text-align: center;
+    /* 칸을 넘어가면 자동으로 줄바꿈을 해주는 속성 */
+    word-break: break-all;
+    border-bottom: 1px solid black;
+    text-align: center;
 }
 
 th {
 
-  background-color: #AEAC12;
+    background-color: #AEAC12;
 }
 
-td a{
-  text-decoration: none;
-  color: black;
+td a {
+    text-decoration: none;
+    color: black;
 }
 
-#issue_video_text{
-  font-size: 20px;
-  padding: 10px;
-  margin-top: 100px;
+#issue_video_text {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 100px;
 }
 
 
 .issue_video {
-  text-align: center;
+    text-align: center;
 
 }
 
 .freeboard_title {
-  width: 480px;
+    width: 480px;
 }
 
 .event_title {
-  width: 240px;
+    width: 240px;
 }

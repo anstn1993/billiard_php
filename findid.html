@@ -2,95 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>아이디 찾기</title>
-  <link rel="stylesheet" href="main_style.css">
-  <link rel="stylesheet" href="findid_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" href="main_style.css">
+    <link rel="stylesheet" href="findid_style.css">
 </head>
 
 
 <body>
-  <nav class="top">
+<nav class="top">
     <div class="top_child">
-      <a class="top_menu" href="main.php">메인으로</a>
+        <a class="top_menu" href="main.php">메인으로</a>
     </div>
-  </nav>
+</nav>
 <div class="main">
-  <h1><a href="main.php">billiards world</a></h1>
+    <h1><a href="main.php">billiards world</a></h1>
 </div>
 
-  <nav class="menu">
+<nav class="menu">
     <div class="menu_child">
-      <a class="freeboard" href="freeboard.php">자유게시판</a>
+        <a class="freeboard" href="freeboard.php">자유게시판</a>
     </div>
     <div class="menu_child">
-      <a class="chat" href="chat.php">당톡방</a>
+        <a class="chat" href="chat.php">당톡방</a>
     </div>
     <div class="menu_child">
-      <a class="event" href="event.php">당구장 이벤트</a>
+        <a class="event" href="event.php">당구장 이벤트</a>
     </div>
     <div class="menu_child">
-      <a class="news" href="news.php">당구소식</a>
+        <a class="news" href="news.php">당구소식</a>
     </div>
     <div class="menu_child">
         <a class="product" href="product.php">당구용품</a>
     </div>
-  </nav>
+</nav>
 
-  <h1 class="findid_title">아이디 찾기</h1>
-  <br>
-  <!-- 아이디 찾기 입력 폼 -->
-  <form class="findid" action="findid_check.php" method="post" onsubmit="return fnc_find_id()">
+<h1 class="findid_title">아이디 찾기</h1>
+<br>
+<!-- 아이디 찾기 입력 폼 -->
+<form class="findid" action="findid_check.php" method="post" onsubmit="return fnc_find_id()">
     <input type="hidden" name="id" value="anstn1993@naver.com">
     <table>
-      <tr>
-        <td>이름</td>
-        <td><input type="text" name="name"></td>
-      </tr>
-      <tr>
-        <td>아이디 찾기 질문</td>
-      </tr>
-      <tr>
-        <td>
-          <select id="findaccount_question_category" name="findaccount_question" >
-            <option value="hometown">나의 고향은?</option>
-            <option value="fathername">아버지의 성함은?</option>
-            <option value="mothername">어머니의 성함은?</option>
-            <option value="treasure">나의 보물 1호는?</option>
-        </select>
-      </td>
-        <td>
-          <input id="findid_answer_input" type="text" name="findaccount_answer">
-        </td>
-      </tr>
+        <tr>
+            <td>이름</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>아이디 찾기 질문</td>
+        </tr>
+        <tr>
+            <td>
+                <select id="findaccount_question_category" name="findaccount_question">
+                    <option value="hometown">나의 고향은?</option>
+                    <option value="fathername">아버지의 성함은?</option>
+                    <option value="mothername">어머니의 성함은?</option>
+                    <option value="treasure">나의 보물 1호는?</option>
+                </select>
+            </td>
+            <td>
+                <input id="findid_answer_input" type="text" name="findaccount_answer">
+            </td>
+        </tr>
     </table>
     <br>
     <div class="findid_cancel">
-      <input type="submit" name="findid" value="아이디 찾기">
-      <button type="button" name="cancel" onclick="location.href='login.html'">취소</button>
+        <input type="submit" name="findid" value="아이디 찾기">
+        <button type="button" name="cancel" onclick="location.href='login.html'">취소</button>
     </div>
-  </form>
-  <!-- <script type="text/javascript">
-    function fnc_find_id(){
-      var name = document.querySelector('form').name.value;
-      var findid_question_category=document.getElementById('findaccount_question_category');
-      var findid_question=findid_question_category.options[findid_question_category.selectedIndex].text;
-      var findid_answer=document.getElementById('findid_answer_input').value;
-      console.log(findid_question);
-      var findid_answer=document.querySelector('form').findid_answer.value;
-      if(name.trim()=="" || findid_question.trim()==""){
-        alert('이름과 질문에 대한 답변을 모두 입력해주세요.');
-        return false;
-      }else if(name!="김문수" || findid_question!="나의 고향은?" || findid_answer!="서울"){
-        alert('이름, 질문과 답변을 다시 확인해주세요.');
-        return false;
-      }else {
-        return true;
-      }
+</form>
+<!-- <script type="text/javascript">
+  function fnc_find_id(){
+    var name = document.querySelector('form').name.value;
+    var findid_question_category=document.getElementById('findaccount_question_category');
+    var findid_question=findid_question_category.options[findid_question_category.selectedIndex].text;
+    var findid_answer=document.getElementById('findid_answer_input').value;
+    console.log(findid_question);
+    var findid_answer=document.querySelector('form').findid_answer.value;
+    if(name.trim()=="" || findid_question.trim()==""){
+      alert('이름과 질문에 대한 답변을 모두 입력해주세요.');
+      return false;
+    }else if(name!="김문수" || findid_question!="나의 고향은?" || findid_answer!="서울"){
+      alert('이름, 질문과 답변을 다시 확인해주세요.');
+      return false;
+    }else {
+      return true;
     }
-  </script> -->
+  }
+</script> -->
 
 </body>
 

@@ -4,7 +4,7 @@
 // rename('freeboard_data/'.$_POST['old_title'], 'freeboard_data/'.$_POST['title']);
 // //게시물 파일의 이름이 재정의 됐으면 그 파일에 이제 수정된 article을 넣어주는 함수
 // file_put_contents('freeboard_data/'.$_POST['title'], $_POST['article']);
-// //다음과 같이 redirection기능을 이용해서 자신이 수정한 게시물 페이지로 이동시킨다. 그 기능을 수행하는 함수는 'header'다.
+
 $conn=mysqli_connect('127.0.0.1','root','rla933466r!','billiards');
 
 $sql="
@@ -72,8 +72,7 @@ else if(!empty($_POST['image_result']) && !empty($_FILES['image']['name'])){
   $name=$row['number'];
   //이미지를 저장할 서버의 폴더 경로를 지정
   $save_dir='./freeboard_content';
-  //이 메소드는 form을 통해 파일을 업로드할 때 일시적으로 저장되는 경로인 tmp폴더에서 내가 지정한 폴더로 파일을 옮기는
-  //함수다.
+  //form을 통해 파일을 업로드할 때 일시적으로 저장되는 경로인 tmp폴더에서 내가 지정한 폴더로 파일을 옮기는 함수다.
   move_uploaded_file($_FILES['image']['tmp_name'], "$save_dir/$name");
 }
 //이미지가 있는 상태에서 이미지를 선택하지 않는 경우
@@ -106,7 +105,7 @@ else{
       WHERE number={$_POST['id']}
   ";
   $result=mysqli_query($conn, $sql);
-  unlink('freeboard_content/'.$row['number']);
+  unlink('freeboard_content/'.$row['number']);//이미지 삭제 
 }
 
 //자유게시판에서 접근한 경우
@@ -116,10 +115,12 @@ if($_POST['mypost']!='yes' && $_POST['mycomment']!='yes'){
 }
 //내가 쓴 게시물에서 접근한 경우
 else if($_POST['mypost']=='yes'){
+  //header를 통해 게시물 페이지로  redirection
   header('Location: ./freeboard_detail.php?id='.$_POST['id'].'&page='.$_POST['page'].'&mypost='.$_POST['mypost']);
 }
 //내가 댓글 단 게시물에서 접근한 경우
 else {
+  //header를 통해 게시물 페이지로  redirection
   header('Location: ./freeboard_detail.php?id='.$_POST['id'].'&page='.$_POST['page'].'&mycomment='.$_POST['mycomment']);
 }
 

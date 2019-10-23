@@ -1,6 +1,8 @@
 # billiard_php
 billiard community website by php
 
+[웹사이트 시연 영상](https://youtu.be/Y2f5bKjwh0E)
+
 ## 제작 의도
 
 back-end(서버사이드)의 세계관을 이해하고 학습하기 위해서 웹 사이트를 제작했습니다. 
